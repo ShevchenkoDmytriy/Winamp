@@ -1,0 +1,61 @@
+﻿<Window x:Class="winamp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:winamp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resource/Без імені.png"/>
+        </Grid.Background>
+        <StackPanel Orientation="Vertical" Background="#FF211F37">
+        <StackPanel Width="295" Height="70" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Width="115" HorizontalAlignment="Left">
+                <Label  Margin="20,20,1,0" Padding="0,0,3,0" >
+                    <Image Source="C:\Users\Dmitriy\source\repos\winamp\winamp\Resource\1.png" Margin="-8,0,0,0" Width="95"/>
+                </Label>
+            </StackPanel>
+                <StackPanel Width="180" Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="x) (ID: 105753)(3:14) *** 11.Envy -EnVHeaven" Width="163" Height="10" Foreground="#FF309A3B" Background="Black" FontSize="10" Padding="0,0,0,0" FontFamily="Bell MT" Margin="5,24,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="15">
+                        <Label Content="320" Foreground="#FF309A3B" Height="8" FontSize="7" Width="18" Background="Black" Padding="2,0,0,0" Margin="3,3,0,0"/>
+                        <Label Content="kbps" Foreground="White" FontSize="9" BorderBrush="Black" Padding="0,0,0,0" Background="{x:Null}" Height="11" Margin="4,2,0,0"/>
+                        <Label Content="44" Foreground="#FF309A3B" Height="8" FontSize="7" Width="14" Background="Black" Padding="3,0,0,0" Margin="7,5,0,0"/>
+                        <Label Content="kHz" Foreground="White" FontSize="9" BorderBrush="Black" Padding="0,0,0,0" Background="{x:Null}" Height="11" Margin="3,3,0,0"/>
+                        <Label Content="momo" Foreground="White" FontSize="7" BorderBrush="Black" Padding="0,0,0,0" Background="{x:Null}" Height="11" Margin="30,5,0,0"/>
+                        <Label Content="stereo" Foreground="#FF309A3B" FontSize="8" BorderBrush="Black" Padding="0,0,0,0" Background="{x:Null}" Height="11" Margin="2,4,0,0"/>
+                    </StackPanel>
+                    <StackPanel Height="20">
+                        <Button Content="EQ" Height="10" Width="22" Padding="0,0,0,0" FontSize="5" Margin="88,6,0,0"/>
+                        <Button Content="EQ" Height="10" Width="22" Padding="0,0,0,0" FontSize="5" Margin="138,-10,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="40">
+                <Button Content="" Height="16" Width="22" Padding="0,0,0,0" FontSize="8" Margin="18,1,0,0"/>
+                <Button  Height="16" Width="22" Margin="3,1,0,0"/>
+                <Button Content="||" Height="16" Width="22" Margin="3,1,0,0" Padding="0,0,0,3"/>
+                <Button Height="16" Width="22" Margin="3,1,0,0" />
+                <Button Height="16" Width="22" Margin="3,1,0,0"/>
+                <Button Height="16" Width="22" Margin="10,1,0,0"/>
+                <Button Content="Shuffle" Width="48" Height="12" Margin="9,1,0,0" FontSize="8" Padding="0,0,0,0"/>
+                <Button Content="Replay" Width="35" Height="12" Margin="3,1,0,0" FontSize="7" Padding="0,0,0,0"/>
+            </StackPanel>
+            <StackPanel Width="280" Height="290" Margin="0,0,0,0" HorizontalAlignment="Left">
+                <RichTextBox x:Name="rich"   FontSize="8" Background="Black" Foreground="#FF309A3B" Height="270" Width="267" Margin="0,0,0,0" VerticalAlignment="Top" IsReadOnlyCaretVisible="True"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="30" Margin="0,-20,0,0">
+                <Button Height="20" Width="30" Content="ADD" Margin="7,0,0,0"/>
+                <Button Height="20" Width="30" Content="REM" Margin="6,0,0,0"/>
+                <Button Height="20" Width="30" Content="SEL" Margin="6,0,0,0"/>
+                <Button Height="20" Width="30" Content="MISC" Margin="6,0,0,0"/>
+                <Label Height="10" Width="80" Padding="3,0,0,0" Margin="6,-10,0,0" Background="Black"  Foreground="#FF309A3B" Content="5:39 / 8:41:00+" FontSize="7"/>
+                <Button Height="20" Width="30"  Margin="6,0,0,0" Content="LIST"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
